@@ -1,0 +1,1 @@
+require(["jquery","handlebars"],function(r,u){r.ajax({url:"/api/buy",dataType:"json",success:function(a){var e=r("#handle").html(),n=u.compile(e)(a);r(".wrap").html(n)}})});
